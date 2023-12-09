@@ -1,10 +1,8 @@
-import { config } from 'dotenv';
-config();
-
 import beeServer from './lib/server';
 
 const app = async () => {
   await beeServer();
+  console.log(process.env);
 };
 
 app()
